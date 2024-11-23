@@ -1,0 +1,20 @@
+.product-heading {
+  font-size: 20px;
+  font-family: ui-rounded;
+  font-weight: 600;
+}
+
+.product-detail {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product-image {
+  height: auto;
+  max-height: 300px; 
+  width: 100%; 
+  max-width: 400px; 
+  display: block;
+  margin: 0 auto; 
+  object-fit: contain; 
+}
+

@@ -1,0 +1,25 @@
+.navbar {
+  background-color: #e56b6f;
+  height: 4rem;
+  padding-top: 10px;
+}
+.heading {
+  text-align: center;
+  color: #274c77;
+  font-family: fangsong;
+  font-size: 24px;
+  font-weight: 600;
+}
+.navbar-menu {
+  padding-bottom: 10px;
+}
+.navbar-menu a {
+  margin-left: 15px;
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar-menu a:hover {
+  text-decoration: underline;
+}
