@@ -27,9 +27,11 @@ describe("ProductDetails Component", () => {
       </MemoryRouter>
     );
     expect(screen.getByTestId("loading")).toBeInTheDocument();
-    await waitFor(() =>
-      expect(screen.getByTestId("product-details")).toBeInTheDocument()
-    );
+
+    await waitFor(() => {
+      expect(screen.getByTestId("product-details")).toBeInTheDocument();
+    }); // Ensure there’s no missing semicolon
+
     expect(screen.queryByTestId("loading")).not.toBeInTheDocument();
   });
 });

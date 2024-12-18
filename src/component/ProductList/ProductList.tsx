@@ -4,7 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./ProductList.css";
 import { fetchProductList, pagination } from "../../api";
-import { debounce } from "lodash";
 
 const ProductsList: React.FC = () => {
   const [product, setProduct] = useState<any[]>([]);
@@ -28,17 +27,10 @@ const ProductsList: React.FC = () => {
     }
   }, []);
 
-  const debouncedShowProducts = useCallback(
-    debounce((page: number) => {
-      displayProducts(page);
-    }, 300),
-    []
-  );
 
   useEffect(() => {
     displayProducts(currentPage);
-    debouncedShowProducts(currentPage);
-  }, [currentPage, debouncedShowProducts]);
+  }, [currentPage]);
 
   const totalPages = Math.ceil(showProducts / PRODUCTS_PER_PAGE);
 

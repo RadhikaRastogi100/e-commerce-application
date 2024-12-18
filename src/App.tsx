@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  BrowserRouter,
 } from "react-router-dom";
 import ProductListPage from "./productPages/ProductListPage";
 import ProductDetailsPage from "./productPages/ProductDetailPage";
